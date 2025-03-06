@@ -1,23 +1,18 @@
 <template>
-    <h1>User Dashboard</h1>
-  </template>
+  <div>
+    <Navbar />
+  </div>
+</template>
 
-  <script>
+<script>
+import Navbar from '@/components/Navbar.vue';
 
-  export default {
-    name: 'UserDashboard',
-    components: {
-    }
+export default {
+  name: 'UserDashboard',
+  components: {
+    Navbar,
   }
-  </script>
+}
+</script>
 
-  <style>
-  #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-  }
-  </style>
+<style></style>

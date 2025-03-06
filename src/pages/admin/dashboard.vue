@@ -1,23 +1,25 @@
 <template>
-    <h1>Admin Dashboard</h1>
-  </template>
+  <div>
+    <Navbar />
 
-  <script>
+    <!-- Crypto Data -->
+    <CryptoData />
+  </div>
+</template>
 
-  export default {
-    name: 'AdminDashboard',
-    components: {
-    }
+<script>
+import Navbar from '@/components/Navbar.vue';
+import CryptoData from '@/components/CryptoData.vue';
+
+export default {
+  name: 'AdminDashboard',
+  components: {
+    Navbar,
+    CryptoData,
   }
-  </script>
+}
+</script>
 
-  <style>
-  #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-  }
-  </style>
+<style>
+
+</style>
